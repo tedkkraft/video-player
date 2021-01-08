@@ -1,12 +1,14 @@
-import logo from './images/24g_logo.svg';
+import React from "react";
+import LogoHeader from "./components/Logo-header";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+            <LogoHeader />
+            <div className="Page-body">
+              <p>Test</p>
+            </div>
     </div>
   );
 }
