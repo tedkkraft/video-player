@@ -6,15 +6,52 @@
   height: 40vmin;
 } */
 
+@font-face {
+  font-family: BrandonBold;
+  src: local('BrandonBold'), url(./fonts/BRANDON_BLD.otf) format('opentype');
+}
 
-.navbar {
+@font-face {
+  font-family: BrandonLight;
+  src: local('BrandonLight'), url(./fonts/BRANDON_LIGHT.otf) format('opentype');
+}
+
+@font-face {
+  font-family: BrandonMedium;
+  src: local('BrandonMedium'), url(./fonts/BRANDON_MED.otf) format('opentype');
+}
+
+@font-face {
+  font-family: BrandonRegular;
+  src: local('BrandonRegular'), url(./fonts/BRANDON_REG.otf) format('opentype');
+}
+
+#logo-header {
+  align-items: flex-start;
   background-color: #393C3E;
   display: flex;
   flex-direction: row;
+  font-family: BrandonMedium;
+  font-size: 20pt;
   justify-content: left;
-  align-items: flex-start;
+  letter-spacing: .1em;
 }
 
-/* *{
-  font-family: 'Poppins', sans-serif
-} */
+#welcome-header {
+  align-items: flex-start;
+  background-color: #009DDB;
+  display: flex;
+  flex-direction: row;
+  font-family: BrandonLight;
+  justify-content: left;
+  letter-spacing: .05em;
+}
+
+#welcome-name {
+  font-family: BrandonBold;
+}
+
+/* Set font color to white for both navbars("headers") */
+.navbar p {
+  color: white;
+}

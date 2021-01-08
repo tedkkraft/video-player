@@ -4,7 +4,7 @@ import logo from '../images/24g_logo.svg'
 
 function LogoHeader() {
   return (
-    <Navbar>
+    <Navbar id="logo-header">
       <Navbar.Brand>
         <img
           src={logo}
@@ -13,7 +13,7 @@ function LogoHeader() {
           alt="24G logo"
         />
       </Navbar.Brand>
-      <h1>VIDEO PLAYER</h1>
+      <p>VIDEO PLAYER</p>
     </Navbar>
   )
 }
