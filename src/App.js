@@ -1,26 +1,32 @@
-import React from "react";
-import ReactPlayer from 'react-player'
+import React, { Component } from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import LogoHeader from "./components/Logo-header";
 import WelcomeHeader from "./components/Welcome-header";
+import videoes from "./videos.json";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <WelcomeHeader />
-      <LogoHeader />
-      <Container className="Page-body">
-        <p>Test</p>
-        <ReactPlayer
-          url='https://static-email-hosting.s3.amazonaws.com/24G_Test_Project/videos/who_is_24g.mp4'
-          light="https://static-email-hosting.s3.amazonaws.com/24G_Test_Project/videos/who_is_24g.jpg"
-          playing
-          controls
-          />
-      </Container>
-    </div>
-  );
+class App extends React.Component {
+  // Setting this.state.friends to the friends json array
+  state = {
+    videos = []
+  };
+
+  // !!! Need to complete this setState !!!
+  // swapVideo = () => {
+  //   this.setState({ liveVideo: })
+  // };
+
+  render() {
+    return (
+      <div className="App">
+        <WelcomeHeader />
+        <LogoHeader />
+        <Container className="Page-body">
+
+        </Container>
+      </div>
+    );
+  }
 }
 
 export default App;
