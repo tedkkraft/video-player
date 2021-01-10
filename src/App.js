@@ -52,6 +52,23 @@ class App extends React.Component {
               ))}
             </Col>
           </Row>
+          <Row>
+            <Col>
+                <div className="video-stats">
+                </div>
+                <div className="this-is-a-line-break">
+                </div>
+            </Col>
+            <Col>
+                <div className="spacing-column">
+                </div>
+            </Col>
+          </Row>
+          <Row>
+            <div className="text-center">
+                <p>powered by 24G</p>
+            </div>
+          </Row>
         </Container>
       </div>
     );

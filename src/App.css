@@ -28,6 +28,21 @@
   src: local('BrandonRegular'), url(./fonts/BRANDON_REG.otf) format('opentype');
 }
 
+.brandon-bold {
+  font-family: BrandonBold;
+}
+
+.brandon-light {
+  font-family: BrandonLight;
+}
+
+.brandon-medium {
+  font-family: BrandonMedium;
+}
+
+.brandon-regular {
+  font-family: BrandonRegular;
+}
 
 /* ----- Header styling ----- */
 
@@ -36,7 +51,6 @@
   background-color: #393C3E;
   display: flex;
   flex-direction: row;
-  font-family: BrandonMedium;
   font-size: 20pt;
   justify-content: left;
   letter-spacing: .1em;
@@ -47,13 +61,8 @@
   background-color: #009DDB;
   display: flex;
   flex-direction: row;
-  font-family: BrandonLight;
   justify-content: left;
   letter-spacing: .05em;
-}
-
-#welcome-name {
-  font-family: BrandonBold;
 }
 
 .navbar p {
