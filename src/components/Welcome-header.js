@@ -3,7 +3,7 @@ import { Navbar } from 'react-bootstrap';
 
 function WelcomeHeader() {
   return (
-    <Navbar id="welcome-header" className="brandon-light">
+    <Navbar id="welcome-header" className="brandon-light full-width-bar">
       <p>Welcome,<span className="brandon-bold"> Ted</span></p>
     </Navbar>
   )

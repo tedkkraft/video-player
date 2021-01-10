@@ -23,10 +23,15 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App mx-auto">
+      <Container fluid className="Page-body">
         <WelcomeHeader />
         <LogoHeader />
-        <Container className="Page-body">
+          <Row>
+            <Col>
+              <p>24G Super Awesome Video</p>
+            </Col>
+          </Row>
           <Row>
             <Col>
               <div className="video-wrapper">
@@ -55,12 +60,14 @@ class App extends React.Component {
           <Row>
             <Col>
                 <div className="video-stats">
+                  <p>video stats col</p>
                 </div>
                 <div className="this-is-a-line-break">
                 </div>
             </Col>
             <Col>
                 <div className="spacing-column">
+                  <p>spacer col</p>
                 </div>
             </Col>
           </Row>

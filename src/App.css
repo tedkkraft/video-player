@@ -1,10 +1,9 @@
-/* .App {
-  text-align: center;
+.App {
+  padding: 0 2rem;
 }
-
-.App-logo {
+/* .App-logo {
   height: 40vmin;
-} */
+}  */
 
 /* ----- 24G font variations----- */
 
@@ -71,7 +70,32 @@
 
 /* ----- Thumbnail styling ----- */
 
-.thumbnail {
-  height: 100px;
-  width: 100px;
+.thumbnail  {
+  padding: 0 1rem 1rem 0;
+}
+
+.thumbnail img {
+  width: 13rem;
+}
+
+
+/* ----- TESTING STYLES----- */
+
+.video-stats {
+  background-color:purple;
+}
+/* 
+
+.page-body {
+  padding: 10rem;
+} */
+
+html, body {
+  overflow-x: hidden;
+}
+.full-width-bar {
+  margin: 0 -9999rem;
+  /* add back negative margin value */
+  padding: 0.25rem 9999rem;
+  background: rgba(0, 0, 0, 0.5);
 }

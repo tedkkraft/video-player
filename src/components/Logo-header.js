@@ -4,7 +4,7 @@ import logo from '../images/24g_logo.svg'
 
 function LogoHeader() {
   return (
-    <Navbar id="logo-header" className="brandon-medium">
+    <Navbar id="logo-header" className="brandon-medium full-width-bar">
       <Navbar.Brand>
         <img
           src={logo}
