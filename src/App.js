@@ -1,17 +1,22 @@
-import React, { Component } from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
-import LogoHeader from "./components/Logo-header";
+import React from 'react'
+import { Container, Col, Row } from 'react-bootstrap';
 import WelcomeHeader from "./components/Welcome-header";
-import videoes from "./videos.json";
+import LogoHeader from "./components/Logo-header";
+import ReactPlayer from 'react-player'
+// import Video from "./components/Video";
+import videos from "./videos.json";
+// import VideoThumb from "./components/Video-thumb";
 import './App.css';
 
 class App extends React.Component {
-  // Setting this.state.friends to the friends json array
-  state = {
-    videos = []
-  };
 
-  // !!! Need to complete this setState !!!
+  constructor(props) {
+    super(props);
+    // Setting state to the first video in the array
+    this.state = videos[0];
+    //console.log(this.state);
+  }
+
   // swapVideo = () => {
   //   this.setState({ liveVideo: })
   // };
@@ -22,7 +27,31 @@ class App extends React.Component {
         <WelcomeHeader />
         <LogoHeader />
         <Container className="Page-body">
-
+          <Row>
+            <Col>
+              <div className="video-wrapper">
+                <ReactPlayer
+                id={this.state.id}
+                title={this.state.title}
+                url={this.state.video}
+                light={this.state.thumb}
+                controls
+                />
+              </div>
+            </Col>
+            <Col>
+              {videos.map(videos => (
+                <div className="thumbnail">
+                  <img
+                    key={videos.id}
+                    id={videos.id}
+                    alt={videos.title}
+                    src={videos.thumb}
+                  />
+                </div>
+              ))}
+            </Col>
+          </Row>
         </Container>
       </div>
     );

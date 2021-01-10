@@ -6,6 +6,8 @@
   height: 40vmin;
 } */
 
+/* ----- 24G font variations----- */
+
 @font-face {
   font-family: BrandonBold;
   src: local('BrandonBold'), url(./fonts/BRANDON_BLD.otf) format('opentype');
@@ -25,6 +27,9 @@
   font-family: BrandonRegular;
   src: local('BrandonRegular'), url(./fonts/BRANDON_REG.otf) format('opentype');
 }
+
+
+/* ----- Header styling ----- */
 
 #logo-header {
   align-items: flex-start;
@@ -51,7 +56,13 @@
   font-family: BrandonBold;
 }
 
-/* Set font color to white for both navbars("headers") */
 .navbar p {
   color: white;
+}
+
+/* ----- Thumbnail styling ----- */
+
+.thumbnail {
+  height: 100px;
+  width: 100px;
 }
