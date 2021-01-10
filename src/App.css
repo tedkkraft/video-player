@@ -75,6 +75,7 @@
 }
 
 .thumbnail img {
+  display: block;
   width: 13rem;
 }
 
@@ -84,11 +85,19 @@
 .video-stats {
   background-color:purple;
 }
-/* 
+
+.video-wrapper {
+  border:2px solid green;
+}
+
+.video-wrapper div {
+  height: 100% !important;
+  width: 100% !important;
+}
 
 .page-body {
   padding: 10rem;
-} */
+} 
 
 html, body {
   overflow-x: hidden;
@@ -99,3 +108,7 @@ html, body {
   padding: 0.25rem 9999rem;
   background: rgba(0, 0, 0, 0.5);
 }
+
+/* video {
+  width:100%;
+} */

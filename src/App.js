@@ -33,7 +33,7 @@ class App extends React.Component {
             </Col>
           </Row>
           <Row>
-            <Col>
+            <Col md={9}>
               <div className="video-wrapper">
                 <ReactPlayer
                 id={this.state.id}
@@ -44,7 +44,7 @@ class App extends React.Component {
                 />
               </div>
             </Col>
-            <Col>
+            <Col md={3}>
               {videos.map(videos => (
                 <div className="thumbnail">
                   <img
