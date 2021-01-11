@@ -29,7 +29,7 @@ class App extends React.Component {
         <LogoHeader />
           <Row>
             <Col>
-              <p>24G Super Awesome Video</p>
+              <p id="subheader" className="brandon-medium">24G Super Awesome Video</p>
             </Col>
           </Row>
           <Row>
@@ -61,7 +61,7 @@ class App extends React.Component {
           <Row>
             <Col md={9}>
                 <div className="video-stats">
-                  <p>video stats col</p>
+                  <p id="views-text"className="brandon-medium">300 views</p>
                 </div>
                 <div className="this-is-a-line-break">
                 </div>

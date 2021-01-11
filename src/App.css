@@ -6,6 +6,7 @@ html, body {
   overflow-x: hidden;
 }
 
+
 /* Overriding Bootstrap's default margin for <p> */
 p {
   margin-bottom: 0;
@@ -57,38 +58,6 @@ p {
 
 /* ----- Header styling ----- */
 
-#logo-header {
-  align-items: flex-start;
-  background-color: #393C3E;
-  display: flex;
-  flex-direction: row;
-  font-size: 26pt;
-  justify-content: left;
-  letter-spacing: .1em;
-}
-
-#headline-text {
-  margin-top: 60px;
-}
-
-#logo {
-  margin: 29px 25px 29px 0px;
-}
-
-#welcome-header {
-  align-items: flex-start;
-  background-color: #009DDB;
-  display: flex;
-  flex-direction: row;
-  font-size: 20pt;
-  justify-content: left;
-  letter-spacing: .05em;
-}
-
-#welcome-text {
-  padding: 7px 0;
-}
-
 .full-width-bar {
   margin: 0 -9999rem;
   /* add back negative margin value */
@@ -98,6 +67,54 @@ p {
 
 .navbar p {
   color: white;
+}
+
+#welcome-header {
+  align-items: flex-start;
+  background-color: #009DDB;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+#welcome-text {
+  font-size: 20pt;
+  margin: 7px 0;
+  letter-spacing: .05em;
+}
+
+#logo-header {
+  align-items: flex-start;
+  background-color: #393C3E;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+#headline-text {
+  font-size: 28pt;
+  margin-top: 60px;
+  letter-spacing: .1em;
+}
+
+#logo {
+  margin: 29px 25px 29px 0px;
+}
+
+
+
+/* ----- Subheader styling ----- */
+
+#subheader {
+  font-size: 28pt;
+  margin: 97px 0 24px 0;
+}
+
+/* ----- View counter styling ----- */
+
+#views-text {
+  font-size: 21pt;
+  margin-top: 10px;
 }
 
 /* ----- Thumbnail styling ----- */
@@ -116,7 +133,7 @@ p {
 /* ----- TESTING STYLES----- */
 
 .video-stats {
-  background-color:purple;
+  background-color: white;
 }
 
 /* .video-wrapper {
