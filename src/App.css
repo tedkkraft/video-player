@@ -1,24 +1,19 @@
+/*Horizontal padding for all app content */
 .App {
-  padding: 0 2rem;
+  padding: 0 4rem;
 }
 
+/* Disable horizontal scrolling, clip horizontally-overflowing content */
 html, body {
   overflow-x: hidden;
 }
 
-
-/* Overriding Bootstrap's default margin for <p> */
+/* Overriding Bootstrap's default margin-bottom for <p> */
 p {
   margin-bottom: 0;
 }
 
-
-
-/* .App-logo {
-  height: 40vmin;
-}  */
-
-/* ----- 24G font variations----- */
+/* ----- 24G font variations and brand colors----- */
 
 @font-face {
   font-family: BrandonBold;
@@ -56,13 +51,27 @@ p {
   font-family: BrandonRegular;
 }
 
+.gray {
+  color: #393C3E;
+}
+
+.orange {
+  color: #FAA61A;
+}
+
+.blue {
+  color: #009DDB;
+}
+
+.blue-bg {
+  background-color: #009DDB;
+}
 /* ----- Header styling ----- */
 
 .full-width-bar {
   margin: 0 -9999rem;
   /* add back negative margin value */
   padding: 0.25rem 9999rem;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .navbar p {
@@ -71,7 +80,6 @@ p {
 
 #welcome-header {
   align-items: flex-start;
-  background-color: #009DDB;
   display: flex;
   flex-direction: row;
   justify-content: left;
@@ -101,20 +109,39 @@ p {
   margin: 29px 25px 29px 0px;
 }
 
-
-
 /* ----- Subheader styling ----- */
 
 #subheader {
   font-size: 28pt;
   margin: 97px 0 24px 0;
+  color:#393C3E;
 }
 
-/* ----- View counter styling ----- */
+/* ----- Video statistics styling ----- */
 
-#views-text {
+.stats-row {
+  border-bottom: 3px solid #EBEBEB;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.stats {
   font-size: 21pt;
-  margin-top: 10px;
+  margin: 10px 0px 30px 0px;
+}
+
+.likes-text {
+  color: #faa61a;
+}
+
+.dislike {
+  margin-left: 40px;
+}
+
+.thumb {
+  margin: 0px 7px 0px 0px;
 }
 
 /* ----- Thumbnail styling ----- */
@@ -129,12 +156,20 @@ p {
   /* border: .5rem solid #faa61a; */
 }
 
+/* ----- Footer styling ----- */
+
+.footer {
+  text-align: center;
+  font-size: 25pt;
+  margin: 60px 0px;
+  letter-spacing: .05em;
+}
 
 /* ----- TESTING STYLES----- */
 
-.video-stats {
+/* .video-stats {
   background-color: white;
-}
+} */
 
 /* .video-wrapper {
   border:2px solid green;
