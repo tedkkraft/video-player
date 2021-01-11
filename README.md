@@ -1,12 +1,12 @@
 ## 24G Test Project
 
-A video player application run in the browser built with React, Node, JavaScript, and CSS.
+A video player application that runs in the browser—built with React, Node, JavaScript, and CSS.
 
 ## Project Status
 
 This project is currently in development. Users can select and watch the video of their choice and the application will record the number of views, likes, and dislikes in local storage (though the data are not related to the videos collection at this time).
 
-Additional functionality and styling is in progress.
+Additional functionality and styling is in progress. Please see bottom of README.
 
 ## Project Screen Shots
 
