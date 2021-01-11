@@ -40,6 +40,7 @@ class App extends React.Component {
                 title={this.state.title}
                 url={this.state.video}
                 light={this.state.thumb}
+                className="video-active"
                 controls
                 />
               </div>
@@ -58,14 +59,14 @@ class App extends React.Component {
             </Col>
           </Row>
           <Row>
-            <Col>
+            <Col md={9}>
                 <div className="video-stats">
                   <p>video stats col</p>
                 </div>
                 <div className="this-is-a-line-break">
                 </div>
             </Col>
-            <Col>
+            <Col md={3}>
                 <div className="spacing-column">
                   <p>spacer col</p>
                 </div>

@@ -7,13 +7,14 @@ function LogoHeader() {
     <Navbar id="logo-header" className="brandon-medium full-width-bar">
       <Navbar.Brand>
         <img
+          id="logo"
           src={logo}
-          width="325"
-          height="100"
+          width="153"
+          height="95"
           alt="24G logo"
         />
       </Navbar.Brand>
-      <p>VIDEO PLAYER</p>
+      <p id="headline-text">VIDEO PLAYER</p>
     </Navbar>
   )
 }

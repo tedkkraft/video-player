@@ -1,6 +1,18 @@
 .App {
   padding: 0 2rem;
 }
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* Overriding Bootstrap's default margin for <p> */
+p {
+  margin-bottom: 0;
+}
+
+
+
 /* .App-logo {
   height: 40vmin;
 }  */
@@ -50,9 +62,17 @@
   background-color: #393C3E;
   display: flex;
   flex-direction: row;
-  font-size: 20pt;
+  font-size: 26pt;
   justify-content: left;
   letter-spacing: .1em;
+}
+
+#headline-text {
+  margin-top: 60px;
+}
+
+#logo {
+  margin: 29px 25px 29px 0px;
 }
 
 #welcome-header {
@@ -60,8 +80,20 @@
   background-color: #009DDB;
   display: flex;
   flex-direction: row;
+  font-size: 20pt;
   justify-content: left;
   letter-spacing: .05em;
+}
+
+#welcome-text {
+  padding: 7px 0;
+}
+
+.full-width-bar {
+  margin: 0 -9999rem;
+  /* add back negative margin value */
+  padding: 0.25rem 9999rem;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .navbar p {
@@ -76,7 +108,8 @@
 
 .thumbnail img {
   display: block;
-  width: 13rem;
+  width: 22vw;
+  /* border: .5rem solid #faa61a; */
 }
 
 
@@ -86,11 +119,16 @@
   background-color:purple;
 }
 
-.video-wrapper {
+/* .video-wrapper {
   border:2px solid green;
-}
+} */
 
-.video-wrapper div {
+/* .video-wrapper div div {
+  height: 100% !important;
+  width: 100% !important;
+} */
+
+.video-active {
   height: 100% !important;
   width: 100% !important;
 }
@@ -99,16 +137,9 @@
   padding: 10rem;
 } 
 
-html, body {
-  overflow-x: hidden;
-}
-.full-width-bar {
-  margin: 0 -9999rem;
-  /* add back negative margin value */
-  padding: 0.25rem 9999rem;
-  background: rgba(0, 0, 0, 0.5);
+
+
+.react-player__preview {
+  height: 39vw !important;
 }
 
-/* video {
-  width:100%;
-} */
