@@ -1,16 +1,24 @@
-/*Horizontal padding for all app content */
+/*Padding to create left and right page gutters */
 .App {
   padding: 0 4rem;
 }
+
+.page-body {
+  padding: 10rem;
+} 
 
 /* Disable horizontal scrolling, clip horizontally-overflowing content */
 html, body {
   overflow-x: hidden;
 }
 
-/* Overriding Bootstrap's default margin-bottom for <p> */
+/* Overriding some of Bootstrap's default styling */
 p {
   margin-bottom: 0;
+}
+
+button {
+  padding: 0px 0px;
 }
 
 /* ----- 24G font variations and brand colors----- */
@@ -66,11 +74,11 @@ p {
 .blue-bg {
   background-color: #009DDB;
 }
+
 /* ----- Header styling ----- */
 
 .full-width-bar {
   margin: 0 -9999rem;
-  /* add back negative margin value */
   padding: 0.25rem 9999rem;
 }
 
@@ -117,6 +125,46 @@ p {
   color:#393C3E;
 }
 
+/* ----- Video player styling ----- */
+
+.video-active {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.react-player__preview {
+  height: 39vw !important;
+}
+
+/* ----- Thumbnail Button styling ----- */
+
+.thumbnail  {
+  padding: 0 1rem 1rem 0;
+}
+
+.thumbnail img {
+  display: block;
+  width: 22vw;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  box-sizing:border-box;
+}
+
+button:active, button:hover, button:focus {
+  border: none;
+  outline:none;
+  box-sizing:border-box;
+}
+
+.thumbnail img:active, .thumbnail img:hover, .thumbnail img:focus {
+  outline:none;
+  border: 6px solid orange;
+  margin: -3px -3px;
+}
+
 /* ----- Video statistics styling ----- */
 
 .stats-row {
@@ -141,19 +189,11 @@ p {
 }
 
 .thumb {
-  margin: 0px 7px 0px 0px;
+  margin: 10px 7px 0px 0px;
 }
 
-/* ----- Thumbnail styling ----- */
-
-.thumbnail  {
-  padding: 0 1rem 1rem 0;
-}
-
-.thumbnail img {
-  display: block;
-  width: 22vw;
-  /* border: .5rem solid #faa61a; */
+img.thumb:active, img.thumb:hover, img.thumb:focus {
+  width: 25px;
 }
 
 /* ----- Footer styling ----- */
@@ -165,10 +205,11 @@ p {
   letter-spacing: .05em;
 }
 
+
 /* ----- TESTING STYLES----- */
 
 /* .video-stats {
-  background-color: white;
+  background-color: green;
 } */
 
 /* .video-wrapper {
@@ -179,19 +220,3 @@ p {
   height: 100% !important;
   width: 100% !important;
 } */
-
-.video-active {
-  height: 100% !important;
-  width: 100% !important;
-}
-
-.page-body {
-  padding: 10rem;
-} 
-
-
-
-.react-player__preview {
-  height: 39vw !important;
-}
-
