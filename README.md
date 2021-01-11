@@ -46,7 +46,6 @@ To Visit App:
 
 This test project presented a lot of unique puzzles that I had fun trying to solve even though I wasn't able to solve them all. I enjoyed working on this application more than any other project I've worked on thus far in my short coding career, and I'm itching to talk through it with someone at 24G.
 
-I do have a small concern that sharing via Google Drive without 
 
 In addition to React and Node, this project uses react-bootstrap for styling and react-player for managing video.
 
